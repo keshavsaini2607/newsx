@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@600&display=swap");
 
 html,
 body {
@@ -15,4 +18,59 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Roboto Slab", serif;
+}
+
+.heading {
+  font-family: "EB Garamond", serif;
+  padding: 0.5rem;
+}
+
+.banner {
+  padding: 2rem;
+  display: grid;
+  place-items: center;
+  height: 40vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.5) 59%,
+      rgba(0, 0, 0, 0.65) 100%
+    ),
+    url("https://media.istockphoto.com/photos/rolled-newspaper-pages-abstract-background-picture-id1294416288?b=1&k=20&m=1294416288&s=170667a&w=0&h=7horZJjbcMmdmNver6xiyOCCmqFEmxTnG6wdYXaHNrM=")
+      no-repeat;
+  background-size: cover;
+}
+
+.bannerHeading {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 4.5rem;
+  /* color: rgb(255, 255, 255); */
+  font-size: 72px;
+  background: -webkit-linear-gradient(
+    rgb(255, 255, 255),
+    rgb(225, 215, 215),
+    rgb(223, 195, 195)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 auto;
+}
+
+#title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+#dropdown-basic {
+  text-align: center;
+  background: rgb(175, 175, 175);
+  border: none;
+  display: flex;
+  align-items: center;
 }
