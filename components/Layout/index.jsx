@@ -1,13 +1,15 @@
-import React from 'react'
-import Navigationbar from '../Navigationbar'
+import React from "react";
+import Navigationbar from "../Navigationbar";
+import Footer from '../../components/Footer';
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
   return (
     <div>
-        <Navigationbar />
-        {children}
+      <Navigationbar />
+      <div style={{flex: 1}}>{children}</div>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

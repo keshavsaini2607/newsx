@@ -1,11 +1,12 @@
 import React from "react";
 import { Container, Image } from "react-bootstrap";
 import { getSinglePost } from "../../../client/request";
+import Layout from '../../../components/Layout';
 
 const PostView = ({ post }) => {
   console.log({ post });
   return (
-    <div>
+    <Layout>
       <Image
         src={post.image}
         alt={post.slug}
@@ -24,7 +25,7 @@ const PostView = ({ post }) => {
         <h1 style={{ textAlign: "center" }}>{post.title}</h1>
         <p style={{ textAlign: "justify" }}>{post.description}</p>
       </Container>
-    </div>
+    </Layout>
   );
 };
 

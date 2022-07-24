@@ -1,12 +1,7 @@
-.container {
-  height: 100vh;
-  width: 100vw;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url("/images/newspaper.jpeg");
+.login-container {
+  background-image: url("https://products.ls.graphics/mesh-gradients/images/01.-Royal-Heath.jpg");
   background-size: cover;
+ 
 }
 
 .form {
